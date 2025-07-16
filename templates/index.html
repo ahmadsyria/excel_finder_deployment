@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel Keyword Search</title>
+</head>
+<body>
+    <h2>ابحث في ملف Excel</h2>
+    <form method="POST">
+        <input type="text" name="keyword" placeholder="ادخل الكلمة" required>
+        <button type="submit">ابحث</button>
+    </form>
+
+    {% if result %}
+        <h3>النتائج:</h3>
+        <pre>{{ result }}</pre>
+    {% endif %}
+</body>
+</html>
